@@ -1,0 +1,25 @@
+h1{
+    background-color:darkgray
+}
+h2{
+    background-color:green
+}
+.box1{
+        background-color:blueviolet
+    }
+.box2{
+        background-color:brown;
+        /*1 giá trị(cách xung quanh=giá trị)*/
+        /*2 giá trị: giá trị đầu(trên, dưới)
+                   giá trị thứ 2(trái, phải)
+                   */
+        /*4 giá trị: trên -> phải -> dưới -> trái*/
+        /*margin:50px 10px 100px 30px;*/
+        /*auto: căn khối ra giữa*/
+        width: 50%;
+        margin: 50px auto;
+        padding:100px;
+    }        
+.box3{
+        background-color:blue
+    }
