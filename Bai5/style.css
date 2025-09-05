@@ -1,0 +1,52 @@
+body {
+    margin:0px
+}
+nav {
+    background-color:#0c4ca3;
+    
+}
+ul{
+    display: flex; /*sắp xếp các khối linh hoạt*/
+    justify-content: center; /*căn giữa theo chiều ngang, phải đi cùng display: flex*/
+    list-style: none; /*bỏ dấu đầu dòng maker*/
+    /*gap: 20px; /*khoảng cách giữa các hàng, cột trong flexbox*/
+}
+li{
+    padding: 15px  
+}
+.border{
+    border-right: 1px solid gray;
+}
+.danhmuc-lienket{
+    color: white;
+    text-decoration-line: none; /*xóa bỏ các đường trang trí: vd đường gạch chân*/
+    font-family: Roboto, Arial, Tahoma;
+}
+.banner-qc{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.qc{
+    display: flex;
+    justify-content: center;
+}
+/*Tạo đường kẻ*/
+header{
+    border-bottom: 15px solid #f1f1f2
+}
+
+.news{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.nd{
+    background-color: bisque;
+    width: 20%;
+    height: 200px;
+    margin: 0px 5px;
+}
+h1{
+    color:blue;
+}
