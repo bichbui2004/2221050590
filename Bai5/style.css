@@ -5,13 +5,16 @@ nav {
     background-color:#0c4ca3;
     
 }
-ul{
+.muc{
     display: flex; /*sắp xếp các khối linh hoạt*/
     justify-content: center; /*căn giữa theo chiều ngang, phải đi cùng display: flex*/
     list-style: none; /*bỏ dấu đầu dòng maker*/
     /*gap: 20px; /*khoảng cách giữa các hàng, cột trong flexbox*/
 }
-li{
+.muc li{
+    list-style:none;
+}
+.td{
     padding: 15px  
 }
 .border{
@@ -35,18 +38,127 @@ li{
 header{
     border-bottom: 15px solid #f1f1f2
 }
+.dangnhap-timkiem{
+    display:flex;
+    float:right;
+    position: relative;
+}
 
+.timkiem{
+    position:absolute;
+    top: 20%;
+    right: 20%
+}
+.more{
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content:space-between;
+    margin: 0px 150px;
+}
+.more div{
+    font-size: 25px;
+    color:blue;
+    border-bottom: 3px solid blue;
+    padding: 15px 0px;
+}
+span{
+    color: gray;
+    float: right;
+}
+.more a{
+    text-decoration-line: none;
+}
 .news{
-    margin: 50px auto;
+    margin: 15px 80px;
     display: flex;
     justify-content: center;
 }
 .nd{
-    background-color: bisque;
     width: 20%;
-    height: 200px;
-    margin: 0px 5px;
+    margin: 0px 15px;
 }
-h1{
+.f{
+    padding: 0px;
+}
+.nd li{
+    font-size: 14px;
+    margin: 0px 10px;
+}
+li{
+    list-style-type: square;
+}
+li::marker{
     color:blue;
+    font-size:large;
+}
+.lienketweb{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tieubieu{
+    display: flex;
+    justify-content: center;
+}
+.anhweb img{
+    width: 200px;
+    height: 60px;
+}
+.dsweb{
+    border: 1px solid gray;
+    height:52px;
+    width: 200px;
+}
+.title{
+    height: 5px;
+    font-size: 13px;
+}
+.oplienket{
+    width: 190px;
+    height: 20px;
+    margin: 0 5px;
+}
+.thongbao{
+    background-color: #f5f2f3;
+}
+.bangtb{
+    margin: 20px 150px;
+}
+.tuyensinh{
+    display: flex;
+    justify-content: center;
+    margin: 10px 150px;
+    gap: 20px;
+}
+.hdsv{
+    display: flex;
+    justify-content: center;
+    margin: 15px 150px;
+    gap: 30px;
+}
+.doitac{
+    display:flex;
+    justify-content: center;
+    margin: 15px 240px;
+    gap:5px;
+}
+.media{
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.media td{
+    border-style:dashed;
+}
+footer{
+    background-color: cornflowerblue;
+    padding: 50px;
+    color:white;
+}
+.chantrang{
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 140px;
 }
