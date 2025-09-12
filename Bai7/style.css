@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(135, 131, 131);
+    margin: 0px;
+    color: white;
+}
+header{
+    background-color:black;
+    width: 100%;
+    height: 10vh;
+
+}
+.yeuthich p{
+    margin-left: 20px;
+}

@@ -5,46 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <table width="100%">
-        <!--header-->
-        <tr>
-            <td colspan="3">
-                <div class="header">
-                    <div align="top" class="back-next">
-                        <p>...</p>
-                        <p>&lt;</p>
-                        <p>&gt;</p>
-                    </div>
-                <form class="timkiem">
-                    Home
-                    <input type="text" name="search" id="search" placeholder="Tìm kiếm....">
-                </form>
-                <div class="myuser">
-                    <div>Thông báo</div>
-                    <div>Chia sẻ</div>
-                    <div>Tài khoản</div>
+    <header>
+        <div class="menu">
+            <div class="icon-home"><i class="fa fa-home" style="font-size:24px"></i></div>
+            <form>
+                <input class="thanhtimkiem" type="text" name="search" id="search">
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="thuvien">
+            <div class="title-thuvien">
+                <p><font size="4">Your Library</font></p>
+                <div class="taothem" style="border-radius: 15px; background-color: rgb(90, 86, 86); padding:5px;">
+                    <i class="fa fa-plus" style="font-size:10px"></i> Create
                 </div>
             </div>
-            </td>
-
-        </tr>
-        <!--main-->
-        <tr>
-            <div clss="main">
-                <td class="playlist">Playlist</td>
-                <td class="song">Song</td>
-                <td class="like">like</td>
+            <div class="menu-thuvien">
+                <div>Playlists</div>
+                <div>Podcasts</div>
+                <div>Albums</div>
+                <div>Artists</div>
             </div>
+            <div class="timkiem-thuvien">
+                <form>
+                    <input style="background-color: rgb(31, 30, 30); border:none;" type="text" name="search-tv" id="search-tv" placeholder="Tìm kiếm">
+                </form>
+                <i class="fa fa-bars"> Recents</i>
+            </div>
+            <div class="baihat-thuvien">
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-tv">
+                    <img src="../pic/1.jpg">
+                    <div class="info-tv">
+                        <p>Liked song</p>
+                        <div class="playlist-info">
+                            <p>Playlists</p>
+                            <p>409 songs</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="manhinhchinh">
+            <div class="tab-menu">
+                <div class="tab" style="background-color: white">All</div>
+                <div class="tab">Music</div>
+                <div class="tab">Podcasts</div>
+            </div>
+            <div class="listsong">
+                <div class="hang">
+                    <div class="song">
+                        <img src="../pic/1.jpg">
+                        <p>Liked song</p>
+                    </div>
+                    <div class="song">
+                        <img src="../pic/1.jpg">
+                        <p>Liked song</p>
+                    </div>
+                    <div class="song">
+                        <img src="../pic/1.jpg">
+                        <p>Liked song</p>
+                    </div>
+                    <div class="song">
+                        <img src="../pic/1.jpg">
+                        <p>Liked song</p>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="song">
+                        <img src="../pic/1.jpg">
+                        <p>Liked song</p>
+                    </div>
+                    <div class="song">
+                        <img src="../pic/1.jpg">
+                        <p>Liked song</p>
+                    </div>
+                    <div class="song">
+                        <img src="../pic/1.jpg">
+                        <p>Liked song</p>
+                    </div>
+                    <div class="song">
+                        <img src="../pic/1.jpg">
+                        <p>Liked song</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yeuthich">
+            <p><b>Likes Songs</b></p>
+            <img src="../pic/1.jpg" width="250px" height="200px">
+            <p><b>Ngàn Năm Ánh Sáng</b><br>Đặng Vĩnh Thịnh</p>
+            <img src="../pic/1.jpg" width="250px" height="200px">
+            
 
-        </tr>
-        <!--footer-->
-        <tr class="footer">
-            <td colspan="3">
-                Thanh phát nhạc
-            </td>
-        </tr>
-    </table>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="baihatdangphat">
+            <img src="../pic/1.jpg" width="60px" height="50px">
+            <div class="ttbaihatdangphat">
+                <p>Tên bài hát</p>
+                <p>Tên ca sĩ</p>
+            </div>
+        </div>
+        <div class="thanhphatnhac">
+
+        </div>
+        <div class="tacvunhac">
+
+        </div>
+    </footer>
 </body>
 </html>
