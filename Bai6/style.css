@@ -38,6 +38,8 @@ main{
     border: 1px solid black;
     border-radius: 10px;
     background-color: rgb(45, 43, 43);
+    overflow-x: hidden; 
+    overflow-y: scroll;
     
 }
 .yeuthich{
@@ -47,6 +49,12 @@ main{
     border-radius: 5px;
     background-color: rgb(31, 30, 30);
     
+}
+.yeuthich img{
+    margin-left: 20px;
+}
+.yeuthich p{
+    margin-left: 20px;
 }
 .tab-menu{
     display: flex;
@@ -134,4 +142,19 @@ main{
 .song-tv img{
     width: 40px;
     height: 40px;
+}
+.album-playlist{
+    margin: 10px;
+}
+.album{
+    display:flex;
+    gap: 15px;
+}
+.al-info img{
+    width: 150px;
+    height: 100px;
+}
+.title-album{
+    display: flex;
+    justify-content: space-between;
 }

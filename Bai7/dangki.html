@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng nhập</title>
+    <style>
+        body{
+            background-color: rgb(213, 219, 217);
+        }
+        header{
+            width: 100%;
+            margin: 0px;
+            color:blue;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        main{
+            background-color: white;
+            border-radius: 10px;
+        }
+        main{
+            width: 30%;
+            margin: auto;
+            border: 1px solid gray;
+        }
+        .title2{
+            margin-bottom: 10px;
+            border-bottom: 1px solid gray;
+        }
+        .hovaten {
+            margin-bottom: 10px;   
+        }
+        .ngaysinh{
+            margin-bottom: 10px;
+        }
+        .gender{
+            margin-bottom: 10px;
+        }
+        .tel-email{
+            margin-bottom: 10px;
+        }
+        .password{
+            margin-bottom: 10px;
+        }
+        .manhinhchinh{
+            margin-left: 5px;
+        }
+        .gender{
+            display: flex;
+            
+        }
+        .gender div{
+            border: 1px solid gray;
+            border-radius: 5px;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div align="center" class="title">
+            facebook
+        </div> 
+    </header>
+    <main>
+    <div class="dk-dn">
+        <form >
+            <div align="center" class="title2">
+                <h2 style="padding:0px; margin: 0px;">Create a new account</h2>
+                It's quick and casy
+            </div>
+            <div class="manhinhchinh">
+            <div class="hovaten">
+                <input type="text" name="firtname" placeholder="First name" size="25px">
+                <input type="text" name="name" placeholder="Name" size="25px">
+            </div>
+            <div class="ngaysinh">
+                Date of birth<br>
+                <select name="ngay">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="thang" >
+                    <option value="1">Tháng 1</option>
+                    <option value="2">Tháng 2</option>
+                    <option value="3">Tháng 3</option>
+                    <option value="4">Tháng 4</option>
+                    <option value="5">Tháng 5</option>
+                    <option value="6">Tháng 6</option>
+                    <option value="7">Tháng 7</option>
+                    <option value="8">Tháng 8</option>
+                    <option value="9">Tháng 9</option>
+                    <option value="10">Tháng 10</option>
+                    <option value="11">Tháng 11</option>
+                    <option value="12">Tháng 12</option>
+                </select>
+                <select name="nam" >
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                </select>
+            </div>
+            <div class="gender">
+                <div>Female<input type="radio" id="gioitinh" value="nu"></div>
+                <div>Male<input type="radio" id="gioitinh" value="nam"></div>
+                <div>Custom<input type="radio" id="gioitinh" value="khac"></div>
+            </div>
+            <div class="tel-email">
+                <input style="width:90%; padding: 5px;" type="text" name="tel/email" placeholder="Mobile number or email address">
+            </div>
+            <div class="password">
+                <input style="width:90%; padding: 5px;" type="password" name="matkhau" placeholder="New password">
+            </div>
+            <div style="margin-bottom: 10px;">
+                People who use our.................... .<a href="#">Learn more</a>
+            </div>
+            <div>
+                People who use our.................... .<a href="#">Learn more</a>
+            </div>
+            <div align="center" style="margin:10px">
+                <input style="padding: 10px; background-color: green; color: white; border-radius: 10px;" type="submit" value="Sign Up">
+            </div>
+            </div>
+        </form>
+    </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,14 +1,181 @@
 body{
-    background-color: rgb(135, 131, 131);
+    background-color: black;
     margin: 0px;
     color: white;
 }
 header{
     background-color:black;
     width: 100%;
-    height: 10vh;
+    height: 70px;
 
 }
-.yeuthich p{
-    margin-left: 20px;
+.container{
+    width: 75%;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    font-size: 18px;
+    align-items: center;
+}
+.nav{
+    display: flex;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.menu a{
+    color: white;
+    text-decoration-line: none;
+}
+#more{
+    background-color: black;
+    font-size: 18px;
+    font-family: Arial;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.chucnang{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cuon{
+    width:100%;
+    height: 660.2px;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+main{
+    width: 75%;
+    background-color: black;
+    margin: auto;
+    color: white;
+    font-family: arial;
+    margin-bottom: 10px;
+}
+.qc1 img{
+    border-radius: 0 0 10px 10px;
+}
+.qc1{
+    margin-bottom: 20px;
+}
+.banner img{
+    border-radius: 10px 10px 0 0;
+}
+.qc2 img{
+    border-radius: 10px;
+}
+.qc2{
+    margin-top: 40px;
+}
+.ds-phim{
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+}
+.phim img{
+    border-radius: 10px;
+}
+.daily img{
+    width: 187px;
+    height: 270px;
+}
+.new img{
+    width: 330px;
+    height: 170px;
+}
+.sk-thethao img{
+    width: 200px;
+    height: 130px;
+}
+.phimbo-hot img{
+    width: 187px;
+    height: 270px;
+}
+.anime-hot img{
+    width: 187px;
+    height: 270px;
+}
+.sieunhan-nb img{
+    width: 187px;
+    height: 270px;
+}
+.phimviet img{
+    width: 187px;
+    height: 270px;
+}
+.danhmuc .phim{
+    border: 1px solid rgb(192, 192, 220);
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    align-content: center;
+    background-color: rgb(171, 171, 213);
+}
+.thieunhi img{
+    width: 187px;
+    height: 270px;
+}
+.thethao img{
+    width: 200px;
+    height: 120px;
+}
+.congchieu .phim{
+    position:relative;
+}
+.phim .btn-red {
+    position: absolute;
+    bottom: 20px;   
+    right: 20px;   
+    background: red;
+    color: white;
+    border: none;
+    padding: 15px 27px;
+    border-radius:10px;
+    font-size: 20px;
+}
+footer{
+    margin-top: 50px;
+    border-top: 1px solid gray;
+    width: 75%;
+    margin: auto;
+}
+.footer-menu{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 1px solid gray;
+}
+.banquyen img{
+    width: 191px;
+    height: 66px;
+}
+.banquyen{
+    margin-right: 100px;
+}
+.fptplay-info{
+    display: flex;
+    gap: 40px;
+
+}
+.fptplay-info ul{
+    list-style: none;
+    padding: 0px;
+}
+.fptplay-info a{
+    color: white;
+    text-decoration-line: none;
+}
+.chantrang{
+    margin-bottom: 20px;
+    font-size: small;
 }
