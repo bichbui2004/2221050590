@@ -3,81 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form đăng nhập</title>
+    <title>Đăng ký</title>
     <style>
         body{
-            background-color: rgb(213, 219, 217);
+            background-color: rgb(221, 226, 230);
         }
-        header{
-            width: 100%;
-            margin: 0px;
-            color:blue;
-            font-size: 50px;
+        .title{
+            color: blue;
             font-weight: bold;
+            font-size: 40px;
+            margin: 30px;
         }
-        main{
+        form{
+            width:25%;
             background-color: white;
+            margin: 0 auto;
             border-radius: 10px;
         }
-        main{
-            width: 30%;
-            margin: auto;
-            border: 1px solid gray;
-        }
         .title2{
-            margin-bottom: 10px;
-            border-bottom: 1px solid gray;
+            margin-top: 10px;
+            border-bottom: 1px solid lightgray;
         }
-        .hovaten {
-            margin-bottom: 10px;   
+        
+        .thongtin{
+            margin-top: 10px;
+        }
+        .hovaten{
+            display: flex;
+            justify-content: space-around;
+            margin: 5px;
+            gap: 3px;
+        }
+        .hovaten input{
+            border-radius: 5px;
+            border: 1px solid gray;
+            padding: 5px;
+            width: 165px;
         }
         .ngaysinh{
-            margin-bottom: 10px;
-        }
-        .gender{
-            margin-bottom: 10px;
-        }
-        .tel-email{
-            margin-bottom: 10px;
-        }
-        .password{
-            margin-bottom: 10px;
-        }
-        .manhinhchinh{
-            margin-left: 5px;
-        }
-        .gender{
             display: flex;
-            
+            justify-content: space-around;
+            margin-top: 10px;
+            gap: 10px;
+            margin: 5px;
+        }
+        .gender{
+            margin-left: 8px;
+            display: flex;
+            gap: 10px;
+        }
+        .gender input{
+            width:60px;
+            margin: 0px;
         }
         .gender div{
-            border: 1px solid gray;
             border-radius: 5px;
-            gap: 10px;
+            border: 1px solid gray;
+            padding: 5px;
+           
+        }
+        .tel-email{
+            margin-top: 10px;
+            
+        }
+        .tel-email input{
+            width: 350px;
+            margin-left: 8px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        .password{
+            margin-top: 10px;
+        }
+        .password input{
+            width: 350px;
+            margin-left: 8px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        .more{
+            margin-top: 15px;
+            font-size: small;
+            margin-bottom: 15px;
+        }
+        select{
+            width: 110px;
+            padding: 5px;
+            border-radius: 5px;
+            border-radius: 1px solid gray;
+        }
+        .other{
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-       <div align="center" class="title">
-            facebook
-        </div> 
-    </header>
-    <main>
-    <div class="dk-dn">
-        <form >
-            <div align="center" class="title2">
-                <h2 style="padding:0px; margin: 0px;">Create a new account</h2>
-                It's quick and casy
-            </div>
-            <div class="manhinhchinh">
+    <div align="center" class="title">
+        facebook
+    </div>
+    <form>
+        <div align="center" class="title2"> 
+            <p style="font-size: 18px; font-weight: bold; padding: 3px; margin: 0px;">Create a new account</p>
+            <p style="padding: 0px; margin: 0px;margin-bottom: 15px;">It's quick and easy</p>
+        </div>
+        <div class="thongtin">
             <div class="hovaten">
-                <input type="text" name="firtname" placeholder="First name" size="25px">
-                <input type="text" name="name" placeholder="Name" size="25px">
+                <div><input type="text" name="ho" placeholder="Firstname"></div>
+                <div><input type="text" name="ten" placeholder="Surname"></div>
             </div>
-            <div class="ngaysinh">
-                Date of birth<br>
-                <select name="ngay">
+            <p style="margin: 5px;margin-left: 8px;">Date of birth</p>
+            <div class="ngaysinh">        
+                <div><select name="ngay">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -109,8 +147,8 @@
                     <option value="29">29</option>
                     <option value="30">30</option>
                     <option value="31">31</option>
-                </select>
-                <select name="thang" >
+                </select></div>
+                <div><select name="thang">
                     <option value="1">Tháng 1</option>
                     <option value="2">Tháng 2</option>
                     <option value="3">Tháng 3</option>
@@ -123,41 +161,42 @@
                     <option value="10">Tháng 10</option>
                     <option value="11">Tháng 11</option>
                     <option value="12">Tháng 12</option>
-                </select>
-                <select name="nam" >
+                </select></div>
+                <div><select name="nam">
                     <option value="2004">2004</option>
                     <option value="2003">2003</option>
                     <option value="2002">2002</option>
                     <option value="2001">2001</option>
                     <option value="2000">2000</option>
-                </select>
+                </select></div>
             </div>
+            <p style="margin: 5px;margin-left: 8px;">Gender</p>
             <div class="gender">
-                <div>Female<input type="radio" id="gioitinh" value="nu"></div>
-                <div>Male<input type="radio" id="gioitinh" value="nam"></div>
-                <div>Custom<input type="radio" id="gioitinh" value="khac"></div>
+                <div>Female<input type="radio" name="gioitinh" value="nu"></div>
+                <div>Male<input type="radio" name="gioitinh" value="nam"></div>
+                <div>Custom<input type="radio" name="gioitinh" value="tuychon"></div>
             </div>
             <div class="tel-email">
-                <input style="width:90%; padding: 5px;" type="text" name="tel/email" placeholder="Mobile number or email address">
+                <input type="text" name="tel/email" placeholder="Mobile number or email address">
             </div>
             <div class="password">
-                <input style="width:90%; padding: 5px;" type="password" name="matkhau" placeholder="New password">
+                <input type="password" name="matkhau" placeholder="New password">
             </div>
-            <div style="margin-bottom: 10px;">
-                People who use our.................... .<a href="#">Learn more</a>
+        </div>
+        <div class="more">
+            <div style="margin: 8px;">
+                People who use our service mayhave uploaded your contact information to Facebook. <u><font color="blue">Learn more.</font></u>
             </div>
-            <div>
-                People who use our.................... .<a href="#">Learn more</a>
+            <div style="margin-top: 10px; margin: 8px;" >
+                By clicking Sign Up, you agree to our <font color="blue">Tems, Privacy Policy</font> and <font color="blue">Cookies Policy</font>. You may receive SMS notifications from us and can opt out at any time.
             </div>
-            <div align="center" style="margin:10px">
-                <input style="padding: 10px; background-color: green; color: white; border-radius: 10px;" type="submit" value="Sign Up">
-            </div>
-            </div>
-        </form>
-    </div>
-    </main>
-    <footer>
-
-    </footer>
+        </div>
+        <div class="submit" align=center>
+            <input style="color:white;background-color: green; font-weight: bold; padding: 3px 35px; border-radius: 5px; border:1px solid rgb(52, 48, 48);" type="submit" value="Sign Up">
+        </div>
+        <div align="center" class="other">
+            <font  color="blue">Already have an account?</font>
+        </div>
+    </form>
 </body>
 </html>
