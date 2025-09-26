@@ -57,10 +57,14 @@
         //soThuBa += soThuTu;
         //document.writeln(soThuBa);
         //phép ==: không quan tâm kiểu dữ liệu
-        //phép ===: quan tâm đến kiểu giữu liệu
-        //phép !=: quan tâm kiểu dl
-        //phép !==: ko quan tâm kiểu dl
-        document.writeln(!(soThuBa !== soThuTu));
+        //phép ===: quan tâm đến kiểu dữ liệu
+        //phép !=: ko quan tâm kiểu dl
+        //phép !==: quan tâm kiểu dl
+        document.writeln(soThuBa == soThuTu);  //true
+        document.writeln(soThuBa === soThuTu); //false
+        document.writeln(!(soThuBa !== soThuTu));  //false
+        document.writeln(soThuBa !== soThuTu);  //true
+        document.writeln(soThuBa != soThuTu);  //false
 
         //Các kiểu dl trong js
         //undefined: chưa đc gán giá trị
