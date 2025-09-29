@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Mảng
+        let arr = [1, 2, 3, 4, "a", "b", "c", 2, 3];
+        //kiểm tra độ dài của mảng
+        document.writeln(arr.length);
+        //lấy ra phần tử trong mảng
+        document.writeln(arr[2]);
+        //tìm xem phần tử có trong mảng hay không
+        document.writeln(arr.indexOf(3)); //trả về vị trí xuất hiện đầu tiên (ko có trả về -1)
+        document.writeln(arr.lastIndexOf(3));  //trả về vị trí xuất hiện cuối cùng
+        //thay dổi giá trị của mảng
+        arr[3] = 6;
+        document.writeln("<br>"+arr);
+        //kiểm tra có phải mảng không
+        document.writeln("<br>"+ Array.isArray(arr));
+        let a, b, c, d;
+        a = [1, 2, 3];
+        b = "Javascript";
+        c = [42, "JS"];
+        //nối các mảng với nhau
+        d = a.concat(b,c);
+        document.writeln("<br>"+ d);
+        //join: chuyển mảng thành chuỗi
+        //d = d.join("-");
+        //document.writeln(Array.isArray(d));
+        //document.writeln(d);
+        //xóa phần tử cuối cùng trong mảng
+        d.pop();
+        document.writeln("<br>"+ d);
+        //thêm phần tử vào trong mảng
+        d.push("Bich");  //thêm vào cuối mảng
+        document.writeln("<br>"+ d);
+        //đảo mảng
+        d.reverse();
+        document.writeln(d);
+        //xóa phần tử đầu tiên trong mảng
+        d.shift();
+        document.writeln("<br>"+d);
+        //thêm phần tử vào đầu mảng
+        d.unshift("Bui");
+        document.writeln(d);
+
+        //if - else
+        let so = "10000000000000001";
+        document.writeln(so.length);
+        document.writeln(so[so.length -1]);
+        let soCuoi = parseInt(so[so.length -1]);
+        if (soCuoi%2==0){
+            document.writeln("Số chẵn")
+        }
+        else{
+            document.writeln("Số lẻ")
+        }
+        
+        let now = new Date().getHours();
+        //5->10: Chào buổi sáng
+        //10->13: chào buổi trưa
+        //13->17: chào buổi chiều
+        //17->22: chào buổi tối
+        //còn lại: chào buổi đêm
+        if (5<=now && now<10){
+            document.writeln("Chào buổi sáng")
+        } else if (now>=10 && now<13){
+            document.writeln("Chào buổi trưa")
+        } else if (now>=13 && now<17){
+            document.writeln("Chào buổi chiều")
+        } else if (now>=17 && now<22){
+            document.writeln("Chào buổi tối")
+        } else {
+            document.writeln("Chào buổi đêm")
+        }
+
+        //a, b, c
+        //8-10: A
+        //7-8: B
+        //5-7: C
+        //4-5: D
+        //<4: F
+        let diemA = 9;
+        let diemB = 10;
+        let diemC = 10;
+        tong = diemA*0.6 + diemB*0.3 + diemC*0.1;
+        tong = tong.toFixed(2);
+        document.writeln("<br>"+ tong);
+        if (tong>=8 && tong<=10){
+            document.writeln("Điển hệ chữ: A")
+        } else if (tong>=7 && tong<8){
+            document.writeln("Điển hệ chữ: B")
+        } else if (tong>=5 && tong<7){
+            document.writeln("Điển hệ chữ: C")
+        } else if (tong>=4 && tong<5){
+            document.writeln("Điển hệ chữ: D")
+        } else{
+            document.writeln("Điển hệ chữ: F")
+        }
+    </script>
+</body>
+</html>
