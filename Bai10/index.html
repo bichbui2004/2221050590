@@ -84,13 +84,15 @@
         //5-7: C
         //4-5: D
         //<4: F
-        let diemA = 9;
-        let diemB = 10;
-        let diemC = 10;
+        let diemA, diemB, diemC;
+        diemA = 90;
+        diemB = 10;
+        diemC = 10;
         tong = diemA*0.6 + diemB*0.3 + diemC*0.1;
-        tong = tong.toFixed(2);
-        document.writeln("<br>"+ tong);
-        if (tong>=8 && tong<=10){
+        document.writeln("<br>"+ tong.toFixed(2));
+        if (diemA<0 || diemA>10 || diemB<0 ||  diemB>10 || diemC<0 || diemC>10){
+            document.writeln("Điểm không hợp lệ")
+        } else if (tong>=8 && tong<=10){
             document.writeln("Điển hệ chữ: A")
         } else if (tong>=7 && tong<8){
             document.writeln("Điển hệ chữ: B")
@@ -99,8 +101,10 @@
         } else if (tong>=4 && tong<5){
             document.writeln("Điển hệ chữ: D")
         } else{
-            document.writeln("Điển hệ chữ: F")
+            document.writeln("Điểm hệ chữ: F")
         }
+        
+        
     </script>
 </body>
 </html>

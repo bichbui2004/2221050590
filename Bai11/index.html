@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //switch - case:
+        let d = new Date();
+        let theDay = d.getDay();
+        switch (theDay){
+            case 5:
+                document.writeln("Finally Friday");
+                break;
+            case 6:
+                document.writeln("Super Saturday");
+                break;
+            case 0:
+                document.writeln("Sleepy Sunday");
+                break;
+            case 1:
+            case 2:
+            case 3:
+                document.writeln("I'm looking forward to this weekend!");  //3 case dùng chung 1 đoạn code (chung 1 kết quả)
+                break;
+            default:
+                document.writeln("I'm looking forward to this weekend!");    
+        } 
+
+        //for
+        // for(let i =1; i<=1000; i++){
+        //     document.writeln("<br>"+i+ " Tôi xin lỗi!");
+        // }
+        //let danhSach = ["Dương Trần Nhật	Anh ", "Dương Vũ	Anh ", "Trần Vũ Hải	Anh ", "Bùi Ngọc	Bích ", "Phạm Quốc	Bình ", "Nguyễn Văn	Chung ", "Hoàng Mạnh	Cường ", "Ngô Hoàng	Dương ", "Phạm Văn	Đại ", "Nguyễn Đình	Đạt ", "Phạm	Đức ", "Vũ Trung	Đức ", "Phạm Hương	Giang ", "Phạm Quang	Hậu ", "Trần Văn	Hiệp ", "Nguyễn Văn	Hoàng ", "Phạm Quốc	Hoàng ", "Phạm Thị	Huế ", "Trần Công	Hùng ", "Đào Thế	Huy ", "Đỗ Quang	Huy ", "Phạm Quang	Huy ", "Phạm Thành	Khang ", "Bùi Văn	Khiêm ", "Nguyễn Tiến	Khởi ", "Đỗ Trung	Kiên ", "Vương Hà	Linh ", "Đào Quang	Lộc ", "Ngô Gia	Lộc ", "Bùi Văn	Mạnh ", "Nguyễn Văn	Mạnh ", "Phan Văn	Mạnh ", "Trương Công	Minh ", "Đỗ Thành	Nam ", "Lê Duy	Nam ", "Nguyễn Hoàng	Nam ", "Nguyễn Anh	Quân ", "Cao Thị Thu	Quyên ", "Phạm Gia	Tài ", "Nguyễn Thị Thanh	Tâm © ", "Nguyễn Đình	Thái ", "Lưu Tiến	Thành ", "Trần Văn	Thành ", "Nguyễn Thị	Thúy ", "Nguyễn Thị	Thúy ", "Bùi Duy	Tiến ", "Nguyễn Văn	Tiến ", "Đỗ Văn	Trung ", "Phạm Đan	Trường ", "Lê Thị Cẩm	Tú ", "Phan Văn	Tuân ", "Cao Thái	Tuấn ", "Nguyễn Duy	Tuấn ", "Nguyễn Huy	Tuấn ", "Thiều Văn	Việt ", "Nguyễn Kiều	Vy"];
+        // for (let i = 0; i <danhSach.length; i++){
+        //     document.writeln("<br>"+i+" Xin lỗi "+ danhSach[i]);
+        // }
+        //kiểm tra xem trong lớp có bao nhiêu người họ Nguyễn
+        // let count = 0;
+        // for (let i = 0; i< danhSach.length; i++){
+        //     //danhSach[i] = danhSach[i].toUpperCase();
+        //     if (danhSach[i].toUpperCase().startsWith("NGUYỄN")==true){
+        //         count = count +1;
+        //     }
+            
+        // } document.writeln("<br>"+"Số người họ Nguyễn: "+ count);
+
+        //while / do - while
+        //while(điều kiện): đk đúng thì chạy
+        //do(lệnh) - while(đk): thực hiện lệnh trước rồi kiểm tra đk nếu đúng chạy tiếp
+        // let i = 0;
+        // while (i<=10){
+        //     document.writeln("The number is "+i);
+        //     document.writeln("<br/>");
+        //     i=i+1;
+        // }
+
+        //popup box
+        //alert("Hello");
+
+        // let result = confirm("Press a button");
+        // if (result==true){
+        //     document.writeln("Bấm OK")
+        // } else{
+        //     document.writeln("Bấm Cancel")
+        // }
+
+        // let result2 = prompt("Nhập họ và tên", "Ví dụ: ABC");
+        // document.writeln(result2);
+
+        //function + tên hàm(){
+        //          code logic...
+        //}
+
+        function sayHello(){
+            document.writeln("Xin chào!");
+        }
+        sayHello();
+
+        function sayHello2(ten, namSinh){
+            document.writeln("Xin chào "+ten+" sinh năm "+namSinh);
+        }
+        sayHello2("Bích","2004");
+
+        let ten = prompt("Nhập họ và tên", "Ví dụ: ABC");
+        let namSinh = prompt("Nhập năm sinh", "Ví dụ: 2000");
+        let tenv = prompt("Nhập họ và tên vợ", "Ví dụ: ABC");
+        let namSinhv = prompt("Nhập năm sinh vợ", "Ví dụ: 2000");
+        let tenc = prompt("Nhập họ và tên con", "Ví dụ: ABC");
+        let namSinhc = prompt("Nhập năm sinh cón", "Ví dụ: 2000");     
+        function sayHello3(ten, namSinh, tenv, namSinhv, tenc, namSinhc){
+            document.writeln("Xin chào "+ten+" sinh năm "+namSinh);
+            document.writeln("<br>"+ "Vợ là "+tenv+" sinh năm "+namSinhv);
+            document.writeln("<br>"+ "Con là "+tenc+" sinh năm "+namSinhc);
+        }
+        sayHello3(ten, namSinh, tenv, namSinhv, tenc, namSinhc);
+    </script>
+</body>
+</html>
