@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Bài 1-->
+    <!--<p>Tính tổng</p>
+    <div>
+        Nhập số thứ nhất:
+        <input type="number" id="soThuNhat">
+    </div>
+    <div>
+        Nhập số thứ hai:
+        <input type="number" id="soThuHai">
+    </div>
+    <div>
+        <button onclick="tinhTong()">Tính tổng</button>
+    </div>
+    <div>
+        Kết quả: <input type="number" id="ketQua" readonly>
+    </div> -->
+
+    <!--Bài 2: Tính điểm-->
+    <h1>Tính điểm</h1>
+    <div>
+        Nhập điểm A: <input type="number" id="diemA">
+    </div>
+    <div>
+        Nhập điểm B: <input type="number" id="diemB">
+    </div>
+    <div>
+        Nhập điểm C: <input type="number" id="diemC">
+    </div>
+    <div>
+        <button onclick="tinhDiem()">Tính điểm</button>
+    </div>
+    <div>
+        Kết quả: <input type="text" id="ketQua" readonly>
+    </div>
+
+
+    <script>
+        //Bài 2
+        function tinhDiem(){
+            let diemA = parseFloat(document.getElementById("diemA").value);
+            let diemB = parseFloat(document.getElementById("diemB").value);
+            let diemC = parseFloat(document.getElementById("diemC").value);
+            let canhBao = "";
+            if(!diemA||diemA<0||diemA>10){
+                canhBao += " Vui lòng nhập lại điểm A ";
+            }
+            if(!diemB||diemB<0||diemB>10){
+                canhBao += " Vui lòng nhập lại điểm B ";
+            }
+            if(!diemC||diemC<0||diemC>10){
+                canhBao += " Vui lòng nhập lại điểm C ";
+            }
+            if(canhBao){
+                alert(canhBao);
+            }
+            let diem = diemA*0.6 + diemB*0.3 + diemC*0.1;
+            if (diem>=8 && diem<=10){
+                document.getElementById("ketQua").value = "A";
+            } else if (diem>=7 && diem<8){
+                document.getElementById("ketQua").value = "B";
+            } else if (diem>=5 && diem<7){
+                document.getElementById("ketQua").value = "C";
+            } else if (diem>=4 && diem<5){
+                document.getElementById("ketQua").value = "D";
+            } else{
+                document.getElementById("ketQua").value = "F";
+            }
+        }
+
+
+        //Bài 1
+        // function tinhTong(){
+        //     let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
+        //     let soThuHai = parseFloat(document.getElementById("soThuHai").value);
+        //     let canhBao = "";
+        //     if(!soThuNhat){
+        //         canhBao += " Vui lòng nhập lại số thứ nhất ";
+        //     }
+        //     if(!soThuHai){
+        //         canhBao += " Vui lòng nhập lại số thứ hai ";
+        //     }
+        //     if (canhBao){
+        //         alert(canhBao);
+        //     }
+        //     let tong = soThuNhat + soThuHai;
+        //     //document.writeln(tong);
+        //     document.getElementById("ketQua").value = tong;
+        // }
+
+
+        //Ôn tập
+        //Tạo prompt nhập tên và in ra màn hình
+        //let ten = prompt("Nhập họ và tên","VD: ABC")
+        //document.writeln("Xin chào "+ten);
+        //Tạo 1 hàm không tham số khi gọi đến hàm đấy thì in ra tên mình nhập vào ở prompt trên
+        // function hello(){
+        //     document.writeln(ten);
+        // }
+        // hello()
+        //Tạo 1 hàm có tham số: ở prompt nhập vào nhập số bất kỳ thì in ra xin châo tưng đó lần
+        // let soLan = parseFloat(prompt("Nhập vào số lần"))
+        // function inRaManHinh(soLan){
+        //     if(!soLan){
+        //         document.writeln("Vui lòng nhập lại")
+        //     } else{
+        //        for(i=0;i<soLan;i++){
+        //         document.writeln("Xin chào"+"<br>")
+        //         } 
+        //     }
+        // }
+        // inRaManHinh(soLan);
+    </script>
+</body>
+</html>
