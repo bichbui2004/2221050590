@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính chỉ số BMI</h1>
+    <p>Công thức: Cân năng / (Chiều cao * Chiều cao)</p>
+    <p>Cân nặng: Kg</p>
+    <p>Chiều cao: m</p>
+    <div class="yeucau">
+        <p>Tạo input cho phép nhập vào chiều cao cân nặng</p>
+        <p>Tạo nút bấm kiểm tra chỉ số BMI</p>
+        <p>Trường hợp 1: Người dùng không nhập hoặc nhập sai thông tin phải cảnh báo</p>
+        <p>Trường hợp 2: Nhập đúng, hiển thị được chỉ số BMI và hình ảnh tương ứng</p>
+    </div>
+    <div style="background-color: bisque; width: 40%; margin: auto;">
+        <h1 align="center">Kiểm tra cân nặng</h1>
+        <div style=" display: flex; gap: 10px;justify-content: center;">
+        <div class="thongtin">
+            <div>
+                Nhập cân nặng: <input type="number" id="canNang">
+            </div>
+            <div>
+                Nhập chiều cao: <input type="number" id="chieuCao">
+            </div>
+            <div>
+                <button onclick="tinhBMI()">Tính BMI</button>
+            </div>
+        </div>
+        <div>
+            <p>BMI</p>
+            <img align=center src="binhthuong.jpg" width="100px">
+        </div>
+    </div>
+    <script>
+        function tinhBMI(){
+            let canNang = parseFloat(document.getElementById('canNang').value);
+            let chieuCao = parseFloat(document.getElementById('chieuCao').value);
+            let canhBao = "";
+            if(!canNang||canNang<0){
+                canhBao += "Nhập lại cân nặng";
+            }
+            if(!chieuCao||chieuCao<0){
+                canhBao += "Nhập lại chiều cao";
+            }
+            if(canhBao){
+                alert(canhBao);
+            }
+            let BMI=(canNang/(chieuCao*chieuCao)).toFixed(2);
+            if (BMI<18.5){
+                document.getElementsByTagName('p')[7].innerHTML=BMI;
+                document.getElementsByTagName('img')[0].src='thieucan.jpg';
+            }
+            else if (BMI>=18.5 && BMI<25){
+                document.getElementsByTagName('p')[7].innerHTML=BMI;
+                document.getElementsByTagName('img')[0].src='binhthuong.jpg';
+            }
+            else if (BMI>=25 && BMI<30){
+                document.getElementsByTagName('p')[7].innerHTML=BMI;
+                document.getElementsByTagName('img')[0].src='thuacan.jpg';
+            }
+            else if (BMI>=30 && BMI<40){
+                document.getElementsByTagName('p')[7].innerHTML=BMI;
+                document.getElementsByTagName('img')[0].src='cap1_2.jpg';
+            }
+            else{
+                document.getElementsByTagName('p')[7].innerHTML=BMI;
+                document.getElementsByTagName('img')[0].src='beonang.jpg';   
+            }
+        }
+    </script>
+</body>
+</html>
