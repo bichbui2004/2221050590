@@ -66,9 +66,29 @@ main{
 .qc1{
     margin-bottom: 20px;
 }
+.banner{
+    position:relative;
+}
 .banner img{
     border-radius: 10px 10px 0 0;
 }
+.thongtinphimhientai{
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 5px;
+}
+
+.thongtinphimhientai li {
+    margin-right: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 2px 5px;
+    gap: 15px;
+    border-radius: 5px;
+    list-style: none;
+}
+
 .qc2 img{
     border-radius: 10px;
 }
@@ -179,3 +199,4 @@ footer{
     margin-bottom: 20px;
     font-size: small;
 }
+//thêm nút trailer
