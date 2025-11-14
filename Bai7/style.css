@@ -87,8 +87,22 @@ main{
     gap: 15px;
     border-radius: 5px;
     list-style: none;
+    font-size: 20px;
 }
-
+.thongtinphimhientai .btn-red {
+    background: red;
+    color: white;
+    border: none;
+    padding: 2px 5px;
+    border-radius:5px;
+    font-size: 20px;
+}
+.trailer{
+    
+    position: absolute;   
+    bottom: 100px;
+    left:50px;
+}
 .qc2 img{
     border-radius: 10px;
 }
@@ -199,4 +213,3 @@ footer{
     margin-bottom: 20px;
     font-size: small;
 }
-//thêm nút trailer

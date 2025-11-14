@@ -18,10 +18,10 @@
         <input type="number" id="soThuHai">
     </div>
     <div>
-        <button onclick="tinhToan(cong)">Tính tổng</button>
-        <button onclick="tinhToan(tru)">Tính hiệu</button>
-        <button onclick="tinhToan(nhan)">Tính tích</button>
-        <button onclick="tinhToan(chia)">Tính thương</button>
+        <button onclick="tinhToan('cong')">Tính tổng</button>
+        <button onclick="tinhToan('tru')">Tính hiệu</button>
+        <button onclick="tinhToan('nhan')">Tính tích</button>
+        <button onclick="tinhToan('chia')">Tính thương</button>
     </div>
     <div>
         Kết quả: <input type="number" id="ketQua" readonly>
@@ -81,14 +81,14 @@
 
 
         //Bài 1
-        function tinhToan(){
+        function tinhToan(phepTinh){
             let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
             let soThuHai = parseFloat(document.getElementById("soThuHai").value);
             let canhBao = "";
             if(!soThuNhat){
                 canhBao += " Vui lòng nhập lại số thứ nhất ";
             }
-            if(!soThuHai){
+            if(isNaN(soThuHai)){
                 canhBao += " Vui lòng nhập lại số thứ hai ";
             }
             if (canhBao){
@@ -104,7 +104,11 @@
                 ketQua = soThuNhat - soThuHai;
             } else if(phepTinh == "nhan"){
                 ketQua = soThuNhat * soThuHai;
-            } else{
+            } else if(phepTinh == "chia"){
+                if(soThuHai == 0){
+                    alert("Không thể chia cho 0");
+                    return;
+                }
                 ketQua = soThuNhat / soThuHai;
             }
             document.getElementById("ketQua").value = ketQua;
